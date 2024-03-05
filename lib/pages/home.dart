@@ -5,6 +5,7 @@ import 'package:chat/pages/login.dart';
 import 'package:chat/pages/quiz.dart';
 import 'package:flutter/material.dart';
 import 'package:chat/pages/firebase_auth_service.dart';
+import 'journal.dart';
 
 class Home extends StatefulWidget {
   Home({required this.mail, this.link = '', this.name = ''});
@@ -236,7 +237,7 @@ class _HomeState extends State<Home> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  "Harmony Navigator",
+                                  "Journal Forge",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white,
@@ -244,7 +245,7 @@ class _HomeState extends State<Home> {
                                   ),
                                 ),
                                 Text(
-                                  "Discover Melodies Tailored to Your Emotions",
+                                  "Craft Your Thoughts into Written Gems",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 12,
@@ -256,7 +257,7 @@ class _HomeState extends State<Home> {
                           onTap: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                  builder: (context) => ChatPage()),
+                                  builder: (context) => JournalPage ()),
                             );
                           },
                         ),
