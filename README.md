@@ -1,4 +1,4 @@
-# chat
+# AI-Alchemist
 
 A new Flutter project.
 
